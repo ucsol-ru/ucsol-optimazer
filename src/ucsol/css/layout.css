@@ -1,0 +1,311 @@
+ 
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/ 
+
+.module,
+#breadcrumbs,
+#content { margin: 0px; }
+
+#toolbar,
+#footer { margin: 0 0px; background-color: #004a61; }
+
+#header { margin: 0px 0px; }
+
+#menu .module { margin: 10px 5px; }
+
+#footer .module { margin: 0; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Layout Widescreen Elements */
+body#page {  }
+
+#block-toolbar { display:none;
+}
+#block-main { padding-bottom: 0px; }
+#block-bottom { padding: 0px 0; }
+#block-footer { box-shadow: 0 1px 8px -8px rgba(0,45,60,0.8) inset; background-color:#002d3b; }
+
+/* Layout Content Elements */
+#toolbar {
+	line-height: 40px;
+	color: #888;
+	font-size: 13px;
+}
+
+#menu {
+	position: relative;
+	margin-top: 0px;
+	float: right; 
+	width: 960px;
+}
+
+.menu-responsive { margin-top: 15px; }
+
+#footer {
+	padding: 20px 0;
+	color: #555;
+	font-size: 13px;
+	text-align: left;
+}
+
+@media (max-width: 1200px) {
+  #footer {padding: 20px 0 40px 0;}
+}
+
+/*#footer a { color: #888; }*/
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 20px;
+right: 350px;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	background: url(../images/totop_scroller.png) 0 0 no-repeat;
+	text-decoration: none;
+	opacity: 0.6;
+}
+#totop-scroller:hover { opacity: 1; }
+
+/* Section Line Style */
+.top-a-sep #top-a,
+.top-b-sep #top-b,
+.main-sep #main,
+.bottom-a-sep #bottom-a { 
+}
+
+ div#absolute {
+  width: 20%!important;
+  right: 0!important;
+}
+
+
+.ya-site-results
+{
+    color: #000000;
+    background: #FFFFFF;
+}
+
+.ya-site-results .b-pager__current,
+.ya-site-results .b-serp-item__number
+{
+    color: #000000 !important;
+}
+
+.ya-site-results
+{
+    font-family: Arial !important;
+}
+
+.ya-site-results :visited,
+.ya-site-results .b-pager :visited,
+.ya-site-results .b-foot__link:visited,
+.ya-site-results .b-copyright__link:visited
+{
+    color: #800080;
+}
+
+.ya-site-results a:link,
+.ya-site-results a:active,
+.ya-site-results .b-pseudo-link,
+.ya-site-results .b-head-tabs__link,
+.ya-site-results .b-head-tabs__link:link,
+.ya-site-results .b-head-tabs__link:visited,
+.ya-site-results .b-dropdown__list .b-pseudo-link,
+.ya-site-results .b-dropdowna__switcher .b-pseudo-link,
+.b-popupa .b-popupa__content .b-menu__item,
+.ya-site-results .b-foot__link:link,
+.ya-site-results .b-copyright__link:link,
+.ya-site-results .b-serp-item__mime,
+.ya-site-results .b-pager :link
+{
+    color: #0033FF;
+}
+
+.ya-site-results :link:hover,
+.ya-site-results :visited:hover,
+.ya-site-results .b-pseudo-link:hover
+{
+    color: #FF0000 !important;
+}
+
+.ya-site-results .l-page,
+.ya-site-results .b-bottom-wizard
+{
+    font-size: 13px;
+}
+
+.ya-site-results .b-pager
+{
+    font-size: 1.25em;
+}
+
+.ya-site-results .b-serp-item__text,
+.ya-site-results .ad
+{
+    font-style: normal;
+    font-weight: normal;
+}
+
+.ya-site-results .b-serp-item__title-link,
+.ya-site-results .ad .ad-link
+{
+    font-style: normal;
+    font-weight: normal;
+}
+
+.ya-site-results .ad .ad-link a
+{
+    font-weight: bold;
+}
+
+.ya-site-results .b-serp-item__title,
+.ya-site-results .ad .ad-link
+{
+    font-size: 16px;
+}
+
+.ya-site-results .b-serp-item__title-link:link,
+.ya-site-results .b-serp-item__title-link
+{
+    font-size: 1em;
+}
+
+.ya-site-results .b-serp-item__number
+{
+    font-size: 13px;
+}
+
+.ya-site-results .ad .ad-link a
+{
+    font-size: 0.88em;
+}
+
+.ya-site-results .b-serp-url,
+.ya-site-results .b-direct .url,
+.ya-site-results .b-direct .url a:link,
+.ya-site-results .b-direct .url a:visited
+{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    color: #329932;
+}
+
+.ya-site-results .b-serp-item__links-link
+{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+}
+
+.ya-site-results .b-pager__inactive,
+.ya-site-results .b-serp-item__from,
+.ya-site-results .b-direct__head-link,
+.ya-site-results .b-image__title,
+.ya-site-results .b-video__title
+{
+    color: #000000 !important;
+}
+
+.ya-site-results .b-pager__current,
+.ya-site-results .b-pager__select
+{
+    background: #E0E0E0;
+}
+
+.ya-site-results .b-foot,
+.ya-site-results .b-line
+{
+    border-top-color: #E0E0E0;
+}
+
+.ya-site-results .b-dropdown__popup .b-dropdown__list,
+.b-popupa .b-popupa__content
+{
+    background-color: #FFFFFF;
+}
+
+.b-popupa .b-popupa__tail
+{
+    border-color: #E0E0E0 transparent;
+}
+
+.b-popupa .b-popupa__tail-i
+{
+    border-color: #FFFFFF transparent;
+}
+
+.b-popupa_direction_left.b-popupa_theme_ffffff .b-popupa__tail-i,
+.b-popupa_direction_right.b-popupa_theme_ffffff .b-popupa__tail-i
+{
+    border-color: transparent #FFFFFF;
+}
+
+.ya-site-results .b-dropdowna__popup .b-menu_preset_vmenu .b-menu__separator
+{
+    border-color: #E0E0E0;
+}
+
+.b-specification-list,
+.b-specification-list .b-pseudo-link,
+.b-specification-item__content label,
+.b-specification-item__content .b-link,
+.b-specification-list .b-specification-list__reset .b-link
+{
+    color: #000000 !important;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.b-specification-item__content .b-calendar__title
+{
+    font-family: Arial;
+    color: #000000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.b-specification-item__content .b-calendar-month__day_now_yes
+{
+    color: #E0E0E0;
+}
+
+.b-specification-item__content .b-calendar .b-pseudo-link
+{
+    color: #000000;
+}
+
+.b-specification-item__content
+{
+    font-family: Arial !important;
+    font-size: 13px;
+}
+
+.b-specification-item__content :visited
+{
+    color: #800080;
+}
+
+.b-specification-item__content .b-pseudo-link:hover,
+.b-specification-item__content :visited:hover
+{
+    color: #FF0000 !important;
+}
+
+.ya-site-results .b-popupa .b-popupa__tail-i
+{
+    background: #FFFFFF;
+    border-color: #E0E0E0 !important;
+}

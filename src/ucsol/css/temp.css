@@ -1,0 +1,72 @@
+header #header-responsive {
+	background-color: #034458;
+	height: 45px;
+	width: 100%;
+	box-shadow: 0 1px 15px #1e1e1ea1;
+}
+
+header #header-responsive_activate {
+  width: 45px;
+  height: 45px;
+  float: right;
+}
+
+.header-sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*burger menu*/
+.header-responsive__menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-responsive__menu-toggle {
+  display: none;
+}
+
+.header-responsive__menu-button,
+.header-responsive__menu-button::before,
+.header-responsive__menu-button::after {
+  margin-top: 20px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.header-responsive__menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+    
+.header-responsive__menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#header-responsive__menu-toggle:checked + .header-responsive__menu-button-container .header-responsive__menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+    
+#header-responsive__menu-toggle:checked + .header-responsive__menu-button-container .header-responsive__menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+    
+#header-responsive__menu-toggle:checked + .header-responsive__menu-button-container .header-responsive__menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/* burger menu END */

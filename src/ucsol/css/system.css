@@ -1,0 +1,184 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/system.css);
+@import url(../warp/systems/joomla/css/system.css);
+@import url(system-all.css);
+
+
+/* Items (Addition)
+----------------------------------------------------------------------------------------------------*/
+ 
+#system .items .leading .item {
+	padding-bottom: 12px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1)
+}
+
+
+/* Item List
+----------------------------------------------------------------------------------------------------*/
+
+#system .item-list {
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1)
+}
+
+
+/* Search
+----------------------------------------------------------------------------------------------------*/
+
+#system span.highlight { background-color: #ffffaa; }
+.country_list {
+	width: 900px; background: #eee; color: #000; border-radius: 10px; box-shadow: 0 0 6px #aaa; 
+}
+.country_list td {
+	padding-top: 10px;
+}
+.country_list td:first-child {
+	padding-left: 20px;
+	
+}
+.country_list {
+	background: #eee;
+	border-radius: 10px;
+	box-shadow: 0 0 6px #aaa;
+}
+.itemFullText .country_list p {
+	margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.itemFullText p.stoim_perevoz_error {
+	opacity: 0;
+    color: red;
+    font-family: "PT Sans";
+    font-size: 28px;
+    text-align: center;
+	line-height: 52px;
+    margin-top: 110px;
+}
+ul li h3 a, ul li h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.itemFullText .rekom_pages {
+	line-height:28px;
+	font-size:20px;
+	    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+	color: #fff;
+	margin: 10px 0;
+	background: transparent url("/images/img/1.jpg") repeat scroll 0% 0%;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-align: center;
+    transition: all 0.2s;
+}
+.yzn_stoim{
+	line-height:28px;
+	font-size:20px;
+	    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+	color: #fff;
+	margin: 30px 0;
+    transition: all 0.2s;
+	background: transparent url("/images/img/2.jpg") repeat scroll 0% 0%;
+}
+.yzn_stoim a {
+	display:block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+.yzn_stoim:hover {
+	opacity: 0.8;
+}
+
+.itemFullText .ne_hot_form {
+	text-align:center;
+	font-weight: bold;
+	color: #008080;
+	    margin-bottom: 20px;
+}
+.itemFullText .ne_hot_form  span {
+	border-bottom: 1px dashed;
+	cursor: pointer;
+	font-size: 20px;
+}
+.itemFullText .ne_hot_form  span:hover {
+	opacity: 0.8;
+	border: 1px dashed #fff;
+}
+.hot_form {
+	height: 19px;
+	border-top: 1px solid #000;
+	border-left: 0;
+	border-right: 0;
+	padding-top: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+ .hot_form li span.joomly-callback {
+	color: #008080;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+	border-bottom: 0;
+}
+ .hot_form li span.joomly-callback:hover {
+	text-decoration: none;
+}
+.hot_form li {
+	height: 24px;
+	overflow:hidden;
+	color: #008080;
+	
+}
+.itemFullText .hot_form ol {
+	padding-left: 5px;
+}
+.hot_form li span {
+	border-bottom: 1px dashed;
+	color: #008080;
+	    font-weight: bold;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+
+ .hot_form li span:hover {
+	border-bottom: 1px dashed #fff;
+}
+.hot_form .icon2{
+	margin-left: 16px;
+}
+.hot_form li div {
+	    margin-left: 16px;
+    color: #000;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.hot_form li div a {
+	color: #000;
+}
+#newsletter-form-field select{
+	    width: 60%;
+    float: right;
+    border: 0;
+    border-bottom: 1px solid #000;
+    height: 34px;
+    border-radius: 0;
+	margin-bottom:0;
+}
+#newsletter-form-field select:focus {
+	outline: none;
+	
+}

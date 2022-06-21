@@ -1,0 +1,38 @@
+@import url(../warp/css/base.css);
+h4 { font-size: 100%;
+line-height: 100%;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0.6em;
+margin-left: 0px;
+font-weight: bold; color: #1f7dd2;}
+h5 { font-size: 16px; line-height: 16px; }
+h5 { font-size: 14px; line-height: 14px; }
+
+small { font-size: 12px; line-height: 0px;}
+
+a:hover { text-decoration: none; }
+
+em {   }
+
+code { color: #45A933; }
+
+ins, mark { border-bottom: 1px #000 solid; }
+
+ins a { color: #ff0000; font-weight: bold;}
+mark { color: #444; }
+
+hr {
+	border-top-color: #ddd;
+	border-top-color: rgba(0,0,0,0.1);
+}
+
+pre {
+	border: 1px solid #ddd;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 6px;
+	background: #fafafa;
+}
+
+select, input, textarea, button { font-size: 14px; } 
+

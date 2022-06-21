@@ -1,0 +1,49 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/ie8.css);
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#block-toolbar {
+	border-bottom: 1px solid #e4e4e4;
+	background: #fafafa;
+}
+
+.menu-dropdown a.level1:before,
+.menu-dropdown span.level1:before,
+.mod-header .module-title:before,
+.button-primary:before,
+.button-default:before,
+form.style button:before,
+form.style input[type="button"]:before,
+form.style input[type="submit"]:before { display: none; }
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.mod-frame > div { background: #f5f5f5; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Search Box */
+.searchbox input { line-height: 30px; }
+
+
+/* Style
+----------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gtr {
+  display: block;
+  line-height: 24px;
+  padding: 12px 15px;
+  cursor: pointer;
+  float:left;
+}
+
+.gtr + .gtr {
+  border-top: 0px solid #f0f2f3;
+}
+
+.rtg {
+  display: none;
+}
+
+.mrt {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.mrt:before {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -6px;
+  height: 4px;
+  width: 8px;
+  border: solid #39ca74;
+  border-width: 0 0 4px 4px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.rtg:checked ~ .mrt {
+  border-color: #39ca74;
+}
+
+.rtg:checked ~ .mrt:before {
+  display: block;
+}
+
+.lst {
+  font-weight: bold;
+  color: #000;
+}
+.rtg:checked ~ .lst {
+  color: #34bf6e;
+}
+
+.ch {width: auto;
+margin-bottom: 70px;
+margin-left: 157px;}
+
+
+
