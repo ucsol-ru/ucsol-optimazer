@@ -36,14 +36,6 @@
 		flex-direction: column;
 	}
 
-	
-	.header-sticky {
-	    position: fixed;
-	    top: 0;
-	    width: 100%;
-	    z-index: 1000;
-	}
-	
 	#header,
 	#header_in {
 		width: 100%;
@@ -53,29 +45,48 @@
 	    position: absolute;
 	    top: 0;
 	    left: 0;
-	    width: 65%;
+	    width: 60%;
+	    text-align: right;
 	    background: #008080;
 	    padding: 0;
-	    border-radius: 0
+	    padding-right: 30px;
+	    border-radius: 0;
+		color: #fff;
+	    font-size: 20px;
 	}
 	#header .headerste2 {
 	    position: absolute;
 	    top: 25px;
 	    left: 0;
-	    width: 65%;
+	    width: 60%;
+	    text-align: right;
 	    background: #008080;
 	    padding: 0;
+	    padding-right: 30px;
 	    border-radius: 0;
+		color: #fff;
+	    font-size: 20px;
 	}
 	#header .headerstxt {
 	    position: absolute;
 	    top: 50px;
 	    left: 0;
-	    width: 65%;
+	    width: 60%;
+	    text-align: right;
 	    background: #008080;
 	    padding: 0;
+	    padding-right: 30px;
 	    border-radius: 0;
+		color: #fff;
+	    font-size: 20px;
 	}
+	
+	#header .headerstel a,
+	#header .headerste2 a,
+	#header .headerstxt a {
+	    color: #fff;    
+	}
+	
 	.headerstxt span {
         display: inline-block;
     }    
@@ -528,6 +539,29 @@
 		margin: 15px auto;
 	}
 
+    /* mobile navigatuion */
+	header #header-responsive { 
+		position: fixed;
+		z-index: 1000;
+		top: 5%;
+		right: 3%;
+		background-color: #fff !important;
+		border-radius: 50%;
+		box-sizing: border-box;
+		filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+		display: inline-block;
+		width: 45px;
+		height: 45px;
+		background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSAxMCA0IEMgNi42OTEgNCA0IDYuNjkxIDQgMTAgQyA0IDEzLjMwOSA2LjY5MSAxNiAxMCAxNiBDIDEzLjMwOSAxNiAxNiAxMy4zMDkgMTYgMTAgQyAxNiA2LjY5MSAxMy4zMDkgNCAxMCA0IHogTSAyNSA0IEMgMjEuNjkxIDQgMTkgNi42OTEgMTkgMTAgQyAxOSAxMy4zMDkgMjEuNjkxIDE2IDI1IDE2IEMgMjguMzA5IDE2IDMxIDEzLjMwOSAzMSAxMCBDIDMxIDYuNjkxIDI4LjMwOSA0IDI1IDQgeiBNIDQwIDQgQyAzNi42OTEgNCAzNCA2LjY5MSAzNCAxMCBDIDM0IDEzLjMwOSAzNi42OTEgMTYgNDAgMTYgQyA0My4zMDkgMTYgNDYgMTMuMzA5IDQ2IDEwIEMgNDYgNi42OTEgNDMuMzA5IDQgNDAgNCB6IE0gMTAgMTkgQyA2LjY5MSAxOSA0IDIxLjY5MSA0IDI1IEMgNCAyOC4zMDkgNi42OTEgMzEgMTAgMzEgQyAxMy4zMDkgMzEgMTYgMjguMzA5IDE2IDI1IEMgMTYgMjEuNjkxIDEzLjMwOSAxOSAxMCAxOSB6IE0gMjUgMTkgQyAyMS42OTEgMTkgMTkgMjEuNjkxIDE5IDI1IEMgMTkgMjguMzA5IDIxLjY5MSAzMSAyNSAzMSBDIDI4LjMwOSAzMSAzMSAyOC4zMDkgMzEgMjUgQyAzMSAyMS42OTEgMjguMzA5IDE5IDI1IDE5IHogTSA0MCAxOSBDIDM2LjY5MSAxOSAzNCAyMS42OTEgMzQgMjUgQyAzNCAyOC4zMDkgMzYuNjkxIDMxIDQwIDMxIEMgNDMuMzA5IDMxIDQ2IDI4LjMwOSA0NiAyNSBDIDQ2IDIxLjY5MSA0My4zMDkgMTkgNDAgMTkgeiBNIDEwIDM0IEMgNi42OTEgMzQgNCAzNi42OTEgNCA0MCBDIDQgNDMuMzA5IDYuNjkxIDQ2IDEwIDQ2IEMgMTMuMzA5IDQ2IDE2IDQzLjMwOSAxNiA0MCBDIDE2IDM2LjY5MSAxMy4zMDkgMzQgMTAgMzQgeiBNIDI1IDM0IEMgMjEuNjkxIDM0IDE5IDM2LjY5MSAxOSA0MCBDIDE5IDQzLjMwOSAyMS42OTEgNDYgMjUgNDYgQyAyOC4zMDkgNDYgMzEgNDMuMzA5IDMxIDQwIEMgMzEgMzYuNjkxIDI4LjMwOSAzNCAyNSAzNCB6IE0gNDAgMzQgQyAzNi42OTEgMzQgMzQgMzYuNjkxIDM0IDQwIEMgMzQgNDMuMzA5IDM2LjY5MSA0NiA0MCA0NiBDIDQzLjMwOSA0NiA0NiA0My4zMDkgNDYgNDAgQyA0NiAzNi42OTEgNDMuMzA5IDM0IDQwIDM0IHoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+		background-size: 50%;
+		transition: all 250ms cubic-bezier(0.05, 0.03, 0.35, 1) 0;
+	}
+
+	header #header-responsive.active {
+		transform: scale(0.95);
+		opacity: 0.8;
+	}
+
 	header #header-responsive .logo,
 	header #header-responsive .menu-responsive {
 		display: none;
@@ -540,7 +574,7 @@
 	header #menu {
 		display: none;
 		z-index: 999;
-		top: 45px;
+		top: 0;
 		left: 0;
 		position: fixed;
 		line-height: 1;
@@ -590,8 +624,8 @@
 
 	#top-a .deepest {
 		min-height: auto !important;
-	    /*padding-bottom: 10px;*/
-        /*background: #008080;*/
+	    padding-bottom: 10px;
+        background: #008080;
 	}
 
 	#top-a .deepest .text-center > a {
@@ -605,6 +639,7 @@
 		object-fit: cover;
 		max-height: 150px;
 		background-size: cover;
+		object-position: top !important;
 	}
 
 	.headerlogo2 {
@@ -724,6 +759,7 @@
 	#content table {
 		display: block;
 		overflow-x: auto;
+		width: 100% !important;
 	}
 
 	.choose_how {

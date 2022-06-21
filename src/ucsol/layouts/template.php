@@ -21,8 +21,7 @@ header('Last-Modified: '. $LastModified);
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="yandex-verification" content="5f79ffdc31cfd1e5" />
 <?php echo $this['template']->render('head'); ?>
-<link rel="stylesheet" href="https://ucsol.ru/templates/ucsol/css/maxpixel.css?ver=2606020" type="text/css" />
-<link rel="stylesheet" href="http://new.ucsol.ru/templates/ucsol/css/temp.css?ver=0.1.1">
+<link rel="stylesheet" href="https://ucsol.ru/templates/ucsol/css/maxpixel.css?ver=1006022" type="text/css" />
 </head>
 <body id="page" class="page <?php echo $this['config']->get('body_classes'); ?>" data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 <?php if ($this['modules']->count('absolute')) : ?>
@@ -144,7 +143,7 @@ echo $this['modules']->render('debug');
 $(document).ready(function() { $("#airports_table").tablesorter(); });
 </script>
 <script>
-/*$(document).ready(function(){
+$(document).ready(function(){
 $("#back-top").hide();
 $(function () {
 $(window).scroll(function () {
@@ -161,7 +160,7 @@ scrollTop: 0
 return false;
 });
 });
-});*/
+});
 </script>
 <div style="position:absolute;top:0;left:-9999px;"> 
 <!--LiveInternet counter--><script type="text/javascript"><!--
@@ -194,6 +193,44 @@ _tmr.push({id: "2818523", type: "pageView", start: (new Date()).getTime()});
   ga('create', 'UA-84509457-1', 'auto');
   ga('send', 'pageview');
 </script>
+<style data-css="other">
+    .footer_adres_link {
+        display: inline;
+    }
+    @media(max-width: 767px) {
+        .footer_cont1, .footer_cont2 {
+            text-align: left !important;
+        }
+    }
+    @media(max-width: 576px) {
+        .footer_adres_link {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .footer_adres_link .hide-sm {
+            display: none;
+        }
+        #header .headerste2,
+        #header .headerstel,
+        #header .headerstxt {
+            font-size: 16x;
+            width: 70%;
+            padding-right: 10px;
+        }
+        #header .headerstel {
+            top: 0;
+        }
+        #header .headerste2 {
+            top: 22px;
+        }
+        #header .headerstxt {
+            top: 45px;
+        }
+        #top-a .deepest .text-center > a img {
+            object-position: 30px;
+        }
+    }
+</style>
 </div>
 </body>
 </html>

@@ -127,7 +127,6 @@ $this['asset']->addFile('js', 'js:warp.js');
 $this['asset']->addFile('js', 'js:responsive.js');
 $this['asset']->addFile('js', 'js:accordionmenu.js');
 $this['asset']->addFile('js', 'js:dropdownmenu.js');
-$this['asset']->addFile('js', 'js:anton.js');
 $this['asset']->addFile('js', 'js:template.js');
 
 // internet explorer
