@@ -1,0 +1,1 @@
+!function(t){t(document).ready(function(){t(".featured-site").hover(function(){var i=t(this).find("img").height()-t(this).height();t(this).find("img").stop().animate({marginTop:-i},3e3)},function(){t(this).find("img").stop().animate({marginTop:0},800)})})}(jQuery);
